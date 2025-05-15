@@ -1,0 +1,671 @@
+/* ===========================
+   VARIABLES Y ESTILOS GLOBALES
+   =========================== */
+
+:root {
+    --primary-color: #0052CC;
+    --secondary-color: #F5F5F5;
+    --dark-bg: #0F1117;
+    --text-dark: #1F2937;
+    --text-light: #6B7280;
+    --border-color: #E5E7EB;
+    --success-color: #10B981;
+    --warning-color: #F59E0B;
+    --padding-lg: 80px;
+    --padding-md: 40px;
+    --padding-sm: 20px;
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    color: var(--text-dark);
+    background-color: #FFFFFF;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--padding-sm);
+}
+
+/* ===========================
+   HEADER / NAVBAR
+   =========================== */
+
+.header {
+    background: white;
+    border-bottom: 1px solid var(--border-color);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 1rem 0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.logo svg {
+    color: var(--primary-color);
+}
+
+.nav-menu {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.nav-menu a {
+    color: var(--text-dark);
+    text-decoration: none;
+    transition: var(--transition);
+    font-size: 0.95rem;
+}
+
+.nav-menu a:hover {
+    color: var(--primary-color);
+}
+
+.btn-login {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.btn-login:hover {
+    background: #0047B2;
+    transform: translateY(-2px);
+}
+
+/* ===========================
+   BOTONES
+   =========================== */
+
+.btn {
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition);
+    font-size: 1rem;
+}
+
+.btn-primary {
+    background: var(--primary-color);
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #0047B2;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0, 82, 204, 0.3);
+}
+
+.btn-secondary {
+    background: white;
+    color: var(--text-dark);
+    border: 2px solid var(--border-color);
+}
+
+.btn-secondary:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    transform: translateY(-2px);
+}
+
+.btn-large {
+    padding: 1rem 2.5rem;
+    font-size: 1.1rem;
+}
+
+/* ===========================
+   HERO SECTION
+   =========================== */
+
+.hero {
+    padding: var(--padding-lg) var(--padding-sm);
+    text-align: center;
+    background: linear-gradient(135deg, #F9FAFB 0%, #F3F4F6 100%);
+}
+
+.hero-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    color: var(--text-dark);
+    font-weight: 700;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    margin-bottom: 2.5rem;
+    line-height: 1.8;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 4rem;
+    flex-wrap: wrap;
+}
+
+/* ===========================
+   DASHBOARD PREVIEW
+   =========================== */
+
+.dashboard-preview {
+    background: white;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    margin-top: 3rem;
+    text-align: left;
+}
+
+.dashboard-preview h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+}
+
+.active-shipments {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-light);
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+}
+
+.status-dot {
+    color: var(--success-color);
+    font-size: 1.2rem;
+}
+
+.shipments-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.shipment-card {
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1.5rem;
+    background: white;
+    transition: var(--transition);
+}
+
+.shipment-card:hover {
+    border-color: var(--primary-color);
+    box-shadow: 0 4px 12px rgba(0, 82, 204, 0.1);
+}
+
+.shipment-card.shipment-warning {
+    border-color: var(--warning-color);
+    background: #FFF8F0;
+}
+
+.shipment-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.shipment-id {
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.badge {
+    font-size: 0.75rem;
+    padding: 0.35rem 0.7rem;
+    border-radius: 4px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.badge-normal {
+    background: #D1FAE5;
+    color: #065F46;
+}
+
+.badge-warning {
+    background: #FED7AA;
+    color: #92400E;
+}
+
+.shipment-data h4 {
+    font-size: 2rem;
+    color: var(--text-dark);
+    margin-bottom: 0.5rem;
+}
+
+.shipment-data p {
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+/* ===========================
+   CARACTERÍSTICAS SECTION
+   =========================== */
+
+.caracteristicas {
+    padding: var(--padding-lg) var(--padding-sm);
+    background: white;
+}
+
+.caracteristicas .container {
+    max-width: 1100px;
+}
+
+.caracteristicas h2,
+.como-funciona h2,
+.beneficios h2,
+.cta h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+}
+
+.section-subtitle {
+    text-align: center;
+    color: var(--text-light);
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.feature-card {
+    padding: 2rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background: white;
+    transition: var(--transition);
+    text-align: center;
+}
+
+.feature-card:hover {
+    border-color: var(--primary-color);
+    box-shadow: 0 12px 24px rgba(0, 82, 204, 0.15);
+    transform: translateY(-8px);
+}
+
+.feature-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #EBF2FF;
+    border-radius: 8px;
+    color: var(--primary-color);
+}
+
+.feature-icon.icon-alert {
+    background: #FFE8E8;
+    color: #EF4444;
+}
+
+.feature-icon.icon-history {
+    background: #E8F8F0;
+    color: var(--success-color);
+}
+
+.feature-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+}
+
+.feature-card p {
+    color: var(--text-light);
+    line-height: 1.7;
+}
+
+/* ===========================
+   CÓMO FUNCIONA SECTION
+   =========================== */
+
+.como-funciona {
+    padding: var(--padding-lg) var(--padding-sm);
+    background: white;
+}
+
+.steps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.step-card {
+    text-align: center;
+}
+
+.step-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0 auto 1.5rem;
+}
+
+.step-card h3 {
+    font-size: 1.15rem;
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+    font-weight: 600;
+}
+
+.step-card p {
+    color: var(--text-light);
+    font-size: 0.95rem;
+}
+
+/* ===========================
+   BENEFICIOS SECTION
+   =========================== */
+
+.beneficios {
+    padding: var(--padding-lg) var(--padding-sm);
+    background: var(--primary-color);
+    color: white;
+}
+
+.beneficios h2 {
+    color: white;
+}
+
+.beneficios .section-subtitle {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.benefit-card {
+    text-align: center;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: var(--transition);
+}
+
+.benefit-card:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-4px);
+}
+
+.benefit-icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+}
+
+.benefit-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.benefit-card p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* ===========================
+   CTA SECTION
+   =========================== */
+
+.cta {
+    padding: var(--padding-lg) var(--padding-sm);
+    text-align: center;
+    background: white;
+}
+
+.cta h2 {
+    margin-bottom: 1rem;
+}
+
+.cta p {
+    color: var(--text-light);
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ===========================
+   FOOTER
+   =========================== */
+
+.footer {
+    background: var(--dark-bg);
+    color: #E5E7EB;
+    padding: var(--padding-lg) var(--padding-sm) var(--padding-md);
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.footer-column h4 {
+    color: white;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.footer-column p {
+    color: #9CA3AF;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 0.7rem;
+}
+
+.footer-column a {
+    color: #9CA3AF;
+    text-decoration: none;
+    transition: var(--transition);
+    font-size: 0.9rem;
+}
+
+.footer-column a:hover {
+    color: var(--primary-color);
+}
+
+.footer-bottom {
+    border-top: 1px solid #374151;
+    padding-top: 2rem;
+    text-align: center;
+    color: #6B7280;
+    font-size: 0.9rem;
+}
+
+/* ===========================
+   RESPONSIVE DESIGN
+   =========================== */
+
+@media (max-width: 768px) {
+    .header-content {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .nav-menu {
+        gap: 1rem;
+        order: 3;
+        width: 100%;
+        flex-direction: column;
+        display: none;
+    }
+
+    .hero {
+        padding: var(--padding-md) var(--padding-sm);
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .caracteristicas,
+    .como-funciona,
+    .beneficios,
+    .cta {
+        padding: var(--padding-md) var(--padding-sm);
+    }
+
+    .caracteristicas h2,
+    .como-funciona h2,
+    .beneficios h2,
+    .cta h2 {
+        font-size: 1.75rem;
+    }
+
+    .features-grid,
+    .steps-grid,
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .shipments-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    :root {
+        --padding-lg: 40px;
+        --padding-md: 20px;
+    }
+
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-buttons {
+        gap: 0.5rem;
+    }
+
+    .dashboard-preview {
+        padding: 1rem;
+    }
+
+    .btn,
+    .btn-login {
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .feature-card,
+    .step-card {
+        padding: 1.5rem;
+    }
+
+    .shipment-data h4 {
+        font-size: 1.5rem;
+    }
+}
