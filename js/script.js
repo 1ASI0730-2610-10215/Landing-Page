@@ -47,9 +47,12 @@ document.addEventListener('DOMContentLoaded', function() {
     const buttons = document.querySelectorAll('.btn-primary');
     buttons.forEach(btn => {
         btn.addEventListener('click', function(e) {
-            // Aquí puedes agregar la lógica para el flujo de login/signup
             console.log('Botón clickeado:', this.textContent);
-            // alert('Redirigiendo al formulario de registro...');
+            // Efecto visual al click
+            this.style.transform = 'scale(0.98)';
+            setTimeout(() => {
+                this.style.transform = '';
+            }, 100);
         });
     });
 
