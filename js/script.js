@@ -69,7 +69,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Simular actualización de datos del dashboard
     updateDashboardData();
-    setInterval(updateDashboardData, 5000); // Actualizar cada 5 segundos
+    const dashboardInterval = setInterval(updateDashboardData, 5000); // Actualizar cada 5 segundos
+    
+    // Permitir parar la actualización cuando se haga scroll
+    let lastScrollTime = 0;
+    window.addEventListener('scroll', function() {
+        lastScrollTime = Date.now();
+    });
 });
 
 // Función para simular actualización de datos
