@@ -132,6 +132,11 @@ body {
     box-shadow: 0 8px 16px rgba(0, 82, 204, 0.3);
 }
 
+.btn:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
 .btn-secondary {
     background: white;
     color: var(--text-dark);
