@@ -120,7 +120,7 @@ Los siguientes enlaces son navegables:
 
 ## 👤 Desarrollador
 
-Implementado por Rodrigo Oblitas - Estudiante de Ingeniería de Software
+Implementado por el equipo de desarrollo.
 
 ## Equipo de Desarrollo
 
