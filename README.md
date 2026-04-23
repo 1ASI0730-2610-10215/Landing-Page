@@ -122,6 +122,15 @@ Los siguientes enlaces son navegables:
 
 Implementado por Rodrigo Oblitas - Estudiante de Ingeniería de Software
 
+## Equipo de Desarrollo
+
+- Rodrigo Oblitas
+- Eslander Celis
+- Mathias Aréchaga
+- Aarón Avila
+- Mariano Vilela
+- Gabriel Mendoza
+
 ---
 
 **Última actualización**: Abril 2026
