@@ -1,126 +1,111 @@
 # ColdTrack Landing Page
 
-Landing page para ColdTrack - Plataforma de monitoreo en tiempo real para el transporte de alimentos.
+Landing page para ColdTrack, una plataforma de monitoreo en tiempo real para el transporte de alimentos.
 
-## 📁 Estructura del Proyecto
+## Estructura del Proyecto
 
-```
+```text
 landing-page/
-├── index.html          # Archivo principal HTML
+├── index.html
 ├── css/
-│   └── styles.css     # Estilos CSS responsivos
+│   └── styles.css
 ├── js/
-│   └── script.js      # JavaScript interactivo
-└── README.md          # Este archivo
+│   └── script.js
+└── README.md
 ```
 
-## 🎨 Características
+## Características
 
-- **Header Responsivo**: Navegación fija con logo y botón de login
-- **Hero Section**: Presentación principal con CTA y preview del dashboard
-- **Características**: 3 características principales con iconos
-- **Cómo Funciona**: 4 pasos visuales del proceso
-- **Beneficios**: 3 beneficios principales en sección con fondo azul
-- **CTA Final**: Llamada a la acción para comenzar
-- **Footer**: Navegación secundaria y enlaces
-- **Responsive Design**: Totalmente responsivo para móvil, tablet y escritorio
+- Header fijo con navegación, login y selector de idioma.
+- Selector `EN | ES` para cambiar la interfaz entre inglés y español.
+- Hero con CTA y preview del dashboard.
+- Secciones de características, funcionamiento, beneficios, CTA y footer.
+- Smooth scrolling, animaciones de entrada y estados hover.
+- Diseño responsive para móvil, tablet y escritorio.
+- SEO básico con título, descripción y OpenGraph localizados.
 
-## 🚀 Cómo Usar
+## Internacionalización
 
-1. Abre el archivo `index.html` en tu navegador
-2. O sirve los archivos con un servidor local:
-   ```bash
-   # Con Python 3
-   python -m http.server 8000
-   
-   # Con Node.js (si tienes http-server instalado)
-   http-server
-   ```
+La internacionalización se implementa en `js/script.js` mediante el objeto `translations`.
 
-3. Navega a `http://localhost:8000/landing-page/`
+- Cada texto traducible del HTML usa el atributo `data-i18n`.
+- El selector de idioma usa botones con `data-language-option`.
+- El idioma seleccionado se guarda en `localStorage` con la clave `coldtrack-language`.
+- Al cambiar idioma, también se actualizan `document.title`, `meta[name="description"]`, `og:title`, `og:description` y el atributo `lang` del documento.
 
-## 🎯 Secciones
+Para agregar o modificar textos:
+
+1. Agrega una clave en los diccionarios `en` y `es` dentro de `translations`.
+2. Usa esa clave en el HTML con `data-i18n="namespace.key"`.
+3. Mantén los nombres de variables, funciones, clases JS y comentarios de código en inglés.
+
+## Documentación del Código
+
+El archivo `js/script.js` usa documentación JSDoc siguiendo el estilo del ejemplo compartido:
+
+- `@fileoverview` para describir el módulo.
+- `@module` para identificar la capa de interacción de la landing.
+- `@type` para estructuras principales.
+- `@param`, `@returns` y descripciones por función.
+
+## Cómo Usar
+
+Abre `index.html` directamente en tu navegador o sirve el proyecto con un servidor local:
+
+```bash
+python -m http.server 8000
+```
+
+Luego abre:
+
+```text
+http://localhost:8000/
+```
+
+## Secciones
 
 ### Header
-- Logo de ColdTrack
-- Navegación con links a las secciones principales
-- Botón "Iniciar Sesión"
+
+- Logo de ColdTrack.
+- Navegación hacia las secciones principales.
+- Selector de idioma `EN | ES`.
+- Botón de inicio de sesión.
 
 ### Hero
-- Título principal
-- Descripción del producto
-- Botones "Comenzar Ahora" y "Más Información"
-- Preview del dashboard con 3 envíos de ejemplo
+
+- Título principal.
+- Descripción del producto.
+- Botones de acción.
+- Preview del dashboard con tres envíos de ejemplo.
 
 ### Características
-- Monitoreo en Tiempo Real
-- Alertas Automáticas
-- Historial Detallado
+
+- Monitoreo en tiempo real.
+- Alertas automáticas.
+- Historial detallado.
 
 ### Cómo Funciona
-1. Instalación de Sensores
-2. Transmisión de Datos
-3. Monitoreo Continuo
-4. Alertas y Reportes
+
+1. Instalación de sensores.
+2. Transmisión de datos.
+3. Monitoreo continuo.
+4. Alertas y reportes.
 
 ### Beneficios
-- Mayor Eficiencia
-- Menos Riesgos
-- Toma de Decisiones Rápida
 
-### Footer
-- Secciones: Producto, Empresa, Soporte
-- Enlaces útiles
-- Copyright
+- Mayor eficiencia.
+- Menos riesgos.
+- Toma de decisiones rápida.
 
-## 🎨 Colores
+## Colores
 
-- **Primario**: `#0052CC` (Azul)
-- **Secundario**: `#F5F5F5` (Gris claro)
-- **Oscuro**: `#0F1117` (Gris oscuro - Footer)
-- **Texto**: `#1F2937` (Gris oscuro)
-- **Texto claro**: `#6B7280` (Gris)
-- **Éxito**: `#10B981` (Verde)
-- **Advertencia**: `#F59E0B` (Ámbar)
-
-## 📱 Breakpoints Responsivos
-
-- **Desktop**: > 768px
-- **Tablet**: 480px - 768px
-- **Mobile**: < 480px
-
-## 🔧 Personalización
-
-Puedes personalizar los siguientes elementos:
-
-1. **Colores**: Modifica las variables CSS en `styles.css`
-2. **Contenido**: Edita el HTML en `index.html`
-3. **Interactividad**: Añade lógica en `js/script.js`
-
-## ✨ Características Interactivas
-
-- Smooth scrolling en los links de navegación
-- Animación de entrada para tarjetas
-- Hover effects en botones y tarjetas
-- Simulación de actualización de datos en el dashboard
-
-## 🔗 Enlaces
-
-Los siguientes enlaces son navegables:
-- Links del menú de navegación redirigen a sus secciones
-- Botones "Comenzar Ahora" tienen funcionalidad preparada
-- Links del footer están listos para conectar a otras páginas
-
-## 📝 Notas
-
-- Diseño basado en el mockup de Figma
-- Totalmente responsive
-- Compatible con navegadores modernos
-- Optimizado para SEO básico
-
-## 👤 Desarrollador
-
-Implementado por el equipo de desarrollo.
+- Primario: `#0052CC`
+- Secundario: `#F5F5F5`
+- Fondo oscuro: `#0F1117`
+- Texto principal: `#1F2937`
+- Texto secundario: `#6B7280`
+- Éxito: `#10B981`
+- Advertencia: `#F59E0B`
 
 ## Equipo de Desarrollo
 
@@ -133,4 +118,4 @@ Implementado por el equipo de desarrollo.
 
 ---
 
-**Última actualización**: Abril 2026
+Última actualización: mayo de 2026
