@@ -145,7 +145,7 @@ const translations = {
     }
 };
 
-const defaultLanguage = "es";
+const defaultLanguage = "en";
 const languageStorageKey = "coldtrack-language";
 
 /**
