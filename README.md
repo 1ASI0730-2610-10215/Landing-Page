@@ -1,11 +1,18 @@
 # ColdTrack Landing Page
 
-Landing page para ColdTrack, una plataforma de monitoreo en tiempo real para el transporte de alimentos.
+ColdTrack Landing Page is a static marketing website for ColdTrack, a real-time monitoring platform for refrigerated food transport. It presents the product value proposition, core features, company information, development team, and direct access to the deployed web application.
 
-## Estructura del Proyecto
+## Live URLs
+
+- Landing page: https://1asi0730-2610-10215.github.io/Landing-Page/
+- Web application: https://coldtrack-front-web.web.app/
+- Alternative application URL: https://coldtrack-front-web.firebaseapp.com/
+- Repository documentation: https://github.com/1ASI0730-2610-10215/Landing-Page
+
+## Project Structure
 
 ```text
-landing-page/
+Landing-Page/
 ├── index.html
 ├── css/
 │   └── styles.css
@@ -14,108 +21,57 @@ landing-page/
 └── README.md
 ```
 
-## Características
+## Features
 
-- Header fijo con navegación, login y selector de idioma.
-- Selector `EN | ES` para cambiar la interfaz entre inglés y español.
-- Hero con CTA y preview del dashboard.
-- Secciones de características, funcionamiento, beneficios, CTA y footer.
-- Smooth scrolling, animaciones de entrada y estados hover.
-- Diseño responsive para móvil, tablet y escritorio.
-- SEO básico con título, descripción y OpenGraph localizados.
+- Sticky toolbar with navigation, application login link, and `EN | ES` language toggle buttons.
+- English interface by default.
+- Hero section with product call to action linked to the deployed ColdTrack web app.
+- Dashboard preview for live shipment monitoring.
+- Feature, workflow, benefits, company, team, CTA, and footer sections.
+- Documentation link connected to the landing page GitHub repository.
+- Responsive layout for desktop, tablet, and mobile devices.
+- SEO metadata updated according to the selected language.
 
-## Internacionalización
+## Internationalization
 
-La internacionalización se implementa en `js/script.js` mediante el objeto `translations`.
+This repository is a static HTML, CSS, and JavaScript landing page. Because it is not an Angular project, `@ngx-translate/core` and `@ngx-translate/http-loader` are not installed here. The landing uses a lightweight JavaScript i18n layer in `js/script.js` with the same functional behavior required for the interface:
 
-- Cada texto traducible del HTML usa el atributo `data-i18n`.
-- El selector de idioma usa botones con `data-language-option`.
-- El idioma seleccionado se guarda en `localStorage` con la clave `coldtrack-language`.
-- Al cambiar idioma, también se actualizan `document.title`, `meta[name="description"]`, `og:title`, `og:description` y el atributo `lang` del documento.
+- Translation dictionaries are defined for `en` and `es`.
+- Text elements use `data-i18n` keys.
+- Toggle buttons use `data-language-option`.
+- The selected language is stored in `localStorage` with the key `coldtrack-language`.
+- English is the default language.
 
-Para agregar o modificar textos:
+If the landing page is migrated to Angular later, the current translation keys can be moved into JSON files and loaded with `@ngx-translate/http-loader`.
 
-1. Agrega una clave en los diccionarios `en` y `es` dentro de `translations`.
-2. Usa esa clave en el HTML con `data-i18n="namespace.key"`.
-3. Mantén los nombres de variables, funciones, clases JS y comentarios de código en inglés.
+## Development
 
-## Documentación del Código
-
-El archivo `js/script.js` usa documentación JSDoc siguiendo el estilo del ejemplo compartido:
-
-- `@fileoverview` para describir el módulo.
-- `@module` para identificar la capa de interacción de la landing.
-- `@type` para estructuras principales.
-- `@param`, `@returns` y descripciones por función.
-
-## Cómo Usar
-
-Abre `index.html` directamente en tu navegador o sirve el proyecto con un servidor local:
+Open `index.html` directly in a browser or serve the folder locally:
 
 ```bash
 python -m http.server 8000
 ```
 
-Luego abre:
+Then open:
 
 ```text
 http://localhost:8000/
 ```
 
-## Secciones
+## Team
 
-### Header
+HackRats development team:
 
-- Logo de ColdTrack.
-- Navegación hacia las secciones principales.
-- Selector de idioma `EN | ES`.
-- Botón de inicio de sesión.
+- Eslander Celis Berrospi
+- Gabriel Mendoza Palacios
+- Rodrigo Oblitas Alcalde
+- Aarón Avila Palacios
+- Mathias Arechaga Saavedra
 
-### Hero
+## Git Flow
 
-- Título principal.
-- Descripción del producto.
-- Botones de acción.
-- Preview del dashboard con tres envíos de ejemplo.
+All changes should start from `develop`, be implemented in a `feature/*` branch, merged back into `develop`, and finally merged into `main` when validated.
 
-### Características
+## Last Update
 
-- Monitoreo en tiempo real.
-- Alertas automáticas.
-- Historial detallado.
-
-### Cómo Funciona
-
-1. Instalación de sensores.
-2. Transmisión de datos.
-3. Monitoreo continuo.
-4. Alertas y reportes.
-
-### Beneficios
-
-- Mayor eficiencia.
-- Menos riesgos.
-- Toma de decisiones rápida.
-
-## Colores
-
-- Primario: `#0052CC`
-- Secundario: `#F5F5F5`
-- Fondo oscuro: `#0F1117`
-- Texto principal: `#1F2937`
-- Texto secundario: `#6B7280`
-- Éxito: `#10B981`
-- Advertencia: `#F59E0B`
-
-## Equipo de Desarrollo
-
-- Rodrigo Oblitas
-- Eslander Celis
-- Mathias Aréchaga
-- Aarón Avila
-- Mariano Vilela
-- Gabriel Mendoza
-
----
-
-Última actualización: mayo de 2026
+May 2026
