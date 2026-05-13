@@ -34,15 +34,13 @@ Landing-Page/
 
 ## Internationalization
 
-This repository is a static HTML, CSS, and JavaScript landing page. Because it is not an Angular project, `@ngx-translate/core` and `@ngx-translate/http-loader` are not installed here. The landing uses a lightweight JavaScript i18n layer in `js/script.js` with the same functional behavior required for the interface:
+The ColdTrack application is built with JavaScript as the programming language and Vue as the frontend framework. Internationalization support is provided with Vue I18n (https://vue-i18n.intlify.dev/), which manages the English and Spanish interface texts.
 
-- Translation dictionaries are defined for `en` and `es`.
-- Text elements use `data-i18n` keys.
-- Toggle buttons use `data-language-option`.
-- The selected language is stored in `localStorage` with the key `coldtrack-language`.
 - English is the default language.
-
-If the landing page is migrated to Angular later, the current translation keys can be moved into JSON files and loaded with `@ngx-translate/http-loader`.
+- The interface supports `EN | ES` language selection.
+- Fixed interface texts are translated across titles, labels, calls to action, navigation, and footer content.
+- Translation resources are organized for the `en` and `es` locales.
+- The selected locale controls the visible language of the user interface.
 
 ## Development
 
