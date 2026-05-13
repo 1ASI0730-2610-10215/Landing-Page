@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="ColdTrack - Monitoreo en tiempo real para el transporte de alimentos. Garantiza la calidad de tus productos con control de temperatura y humedad.">
+    <meta name="description" content="ColdTrack - Real-time monitoring for food transport. Guarantee product quality with temperature and humidity control.">
     <meta name="keywords" content="monitoring, food transport, temperature, humidity, IoT, logistics">
     <meta name="author" content="ColdTrack">
-    <title>ColdTrack - Monitoreo en Tiempo Real para el Transporte de Alimentos</title>
+    <title>ColdTrack - Real-Time Monitoring for Food Transport</title>
     <link rel="canonical" href="https://coldtrack.com/">
-    <meta property="og:title" content="ColdTrack - Monitoreo en Tiempo Real">
-    <meta property="og:description" content="Garantiza la calidad de tus productos con control de temperatura y humedad.">
+    <meta property="og:title" content="ColdTrack - Real-Time Monitoring">
+    <meta property="og:description" content="Guarantee product quality with temperature and humidity control.">
     <meta property="og:type" content="website">
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/script.js" defer></script>
@@ -25,17 +25,19 @@
                 <span>ColdTrack</span>
             </a>
             <nav class="nav-menu" aria-label="Primary navigation">
-                <a href="#features" data-i18n="nav.features">Características</a>
-                <a href="#how-it-works" data-i18n="nav.howItWorks">Cómo Funciona</a>
-                <a href="#benefits" data-i18n="nav.benefits">Beneficios</a>
+                <a href="#features" data-i18n="nav.features">Features</a>
+                <a href="#how-it-works" data-i18n="nav.howItWorks">How It Works</a>
+                <a href="#benefits" data-i18n="nav.benefits">Benefits</a>
+                <a href="#company" data-i18n="nav.company">Company</a>
+                <a href="#team" data-i18n="nav.team">Team</a>
             </nav>
             <div class="header-actions">
                 <div class="language-switcher" role="group" aria-label="Language selector">
-                    <button class="language-button" type="button" data-language-option="en" aria-pressed="false">EN</button>
+                    <button class="language-button active" type="button" data-language-option="en" aria-pressed="true">EN</button>
                     <span class="language-separator" aria-hidden="true">|</span>
-                    <button class="language-button active" type="button" data-language-option="es" aria-pressed="true">ES</button>
+                    <button class="language-button" type="button" data-language-option="es" aria-pressed="false">ES</button>
                 </div>
-                <button class="btn-login" type="button" data-i18n="actions.login">Iniciar Sesión</button>
+                <a class="btn-login" href="https://coldtrack-front-web.web.app/sign-in" data-i18n="actions.login">Log In</a>
             </div>
         </div>
     </header>
@@ -43,11 +45,11 @@
     <main>
         <section class="hero">
             <div class="container hero-content">
-                <h1 data-i18n="hero.title">Monitoreo en Tiempo Real para el Transporte de Alimentos</h1>
-                <p data-i18n="hero.description">Asegura la calidad de tus productos con control de temperatura y humedad en cada etapa del transporte.</p>
+                <h1 data-i18n="hero.title">Real-Time Monitoring for Food Transport</h1>
+                <p data-i18n="hero.description">Protect product quality with temperature and humidity control at every stage of transport.</p>
                 <div class="hero-buttons">
-                    <button class="btn btn-primary" type="button" data-i18n="actions.start">Comenzar Ahora</button>
-                    <button class="btn btn-secondary" type="button" data-i18n="actions.learnMore">Más Información</button>
+                    <a class="btn btn-primary" href="https://coldtrack-front-web.web.app/sign-in" data-i18n="actions.start">Start Now</a>
+                    <a class="btn btn-secondary" href="#company" data-i18n="actions.learnMore">Learn More</a>
                 </div>
 
                 <div class="dashboard-preview" aria-label="Live monitoring dashboard preview">
@@ -94,8 +96,8 @@
 
         <section id="features" class="features">
             <div class="container">
-                <h2 data-i18n="features.title">Características Principales</h2>
-                <p class="section-subtitle" data-i18n="features.subtitle">Todo lo que necesitas para garantizar la calidad en el transporte</p>
+                <h2 data-i18n="features.title">Key Features</h2>
+                <p class="section-subtitle" data-i18n="features.subtitle">Everything you need to guarantee transport quality</p>
                 <div class="features-grid">
                     <article class="feature-card">
                         <div class="feature-icon">
@@ -132,8 +134,8 @@
 
         <section id="how-it-works" class="how-it-works">
             <div class="container">
-                <h2 data-i18n="workflow.title">¿Cómo Funciona?</h2>
-                <p class="section-subtitle" data-i18n="workflow.subtitle">Implementación simple, resultados inmediatos</p>
+                <h2 data-i18n="workflow.title">How Does It Work?</h2>
+                <p class="section-subtitle" data-i18n="workflow.subtitle">Simple implementation, immediate results</p>
                 <div class="steps-grid">
                     <article class="step-card">
                         <div class="step-number">1</div>
@@ -161,8 +163,8 @@
 
         <section id="benefits" class="benefits">
             <div class="container">
-                <h2 data-i18n="benefits.title">Beneficios para tu Operación</h2>
-                <p class="section-subtitle" data-i18n="benefits.subtitle">Mejora cada aspecto de tu cadena de distribución</p>
+                <h2 data-i18n="benefits.title">Benefits for Your Operation</h2>
+                <p class="section-subtitle" data-i18n="benefits.subtitle">Improve every part of your distribution chain</p>
                 <div class="benefits-grid">
                     <article class="benefit-card">
                         <div class="benefit-icon">
@@ -181,7 +183,7 @@
                             </svg>
                         </div>
                         <h3 data-i18n="benefits.riskTitle">Menos Riesgos</h3>
-                        <p data-i18n="benefits.riskDescription">Previene pérdidas por deterioro de productos</p>
+                        <p data-i18n="benefits.riskDescription">Prevent losses caused by product deterioration</p>
                     </article>
                     <article class="benefit-card">
                         <div class="benefit-icon">
@@ -197,11 +199,64 @@
             </div>
         </section>
 
+        <section id="company" class="company">
+            <div class="container company-layout">
+                <div>
+                    <h2 data-i18n="company.title">About FreshGuard Technologies</h2>
+                    <p data-i18n="company.description">FreshGuard Technologies is a technology startup focused on optimizing food quality during transport through real-time monitoring. Its main product, ColdTrack, integrates with temperature and humidity sensors installed in transport units so companies can supervise product conditions from distribution centers to the final destination.</p>
+                    <div class="company-values">
+                        <article>
+                            <h3 data-i18n="company.missionTitle">Mission</h3>
+                            <p data-i18n="company.missionDescription">Guarantee food quality and safety during transport through real-time monitoring, helping companies make fast decisions to avoid losses and maintain optimal conditions.</p>
+                        </article>
+                        <article>
+                            <h3 data-i18n="company.visionTitle">Vision</h3>
+                            <p data-i18n="company.visionDescription">Become the leading transport condition monitoring solution in Peru and Latin America through innovation, reliability, and contribution to food safety.</p>
+                        </article>
+                    </div>
+                </div>
+                <aside class="company-card" aria-label="ColdTrack application access">
+                    <h3 data-i18n="company.appTitle">ColdTrack Web App</h3>
+                    <p data-i18n="company.appDescription">Access the deployed application to manage shipments, sensors, alerts, and historical reports.</p>
+                    <a class="btn btn-primary" href="https://coldtrack-front-web.web.app/" data-i18n="actions.openApp">Open App</a>
+                </aside>
+            </div>
+        </section>
+
+        <section id="team" class="team">
+            <div class="container">
+                <h2 data-i18n="team.title">Development Team</h2>
+                <p class="section-subtitle" data-i18n="team.subtitle">HackRats team members behind ColdTrack</p>
+                <div class="team-grid">
+                    <article class="team-card">
+                        <h3>Eslander Celis Berrospi</h3>
+                        <p>U201911249</p>
+                    </article>
+                    <article class="team-card">
+                        <h3>Gabriel Mendoza Palacios</h3>
+                        <p>U202416908</p>
+                    </article>
+                    <article class="team-card">
+                        <h3>Rodrigo Oblitas Alcalde</h3>
+                        <p>U20221G185</p>
+                    </article>
+                    <article class="team-card">
+                        <h3>Aarón Avila Palacios</h3>
+                        <p>U201823654</p>
+                    </article>
+                    <article class="team-card">
+                        <h3>Mathias Arechaga Saavedra</h3>
+                        <p>U202320699</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
         <section class="cta">
             <div class="container">
                 <h2 data-i18n="cta.title">Comienza a Proteger tus Envíos Hoy</h2>
-                <p data-i18n="cta.description">Únete a las empresas que ya confían en ColdTrack</p>
-                <button class="btn btn-primary btn-large" type="button" data-i18n="actions.start">Comenzar Ahora</button>
+                <p data-i18n="cta.description">Join the companies that already trust ColdTrack</p>
+                <a class="btn btn-primary btn-large" href="https://coldtrack-front-web.web.app/sign-in" data-i18n="actions.start">Start Now</a>
             </div>
         </section>
     </main>
@@ -219,32 +274,32 @@
                 <p data-i18n="footer.description">Monitoreo inteligente para el transporte de alimentos</p>
             </div>
             <div class="footer-column">
-                <h4 data-i18n="footer.product">Producto</h4>
+                <h4 data-i18n="footer.product">Product</h4>
                 <ul>
-                    <li><a href="#features" data-i18n="nav.features">Características</a></li>
-                    <li><a href="#" data-i18n="footer.pricing">Precios</a></li>
-                    <li><a href="#" data-i18n="footer.integrations">Integraciones</a></li>
+                    <li><a href="#features" data-i18n="nav.features">Features</a></li>
+                    <li><a href="https://coldtrack-front-web.web.app/" data-i18n="actions.openApp">Open App</a></li>
+                    <li><a href="#benefits" data-i18n="nav.benefits">Benefits</a></li>
                 </ul>
             </div>
             <div class="footer-column">
-                <h4 data-i18n="footer.company">Empresa</h4>
+                <h4 data-i18n="footer.company">Company</h4>
                 <ul>
-                    <li><a href="#" data-i18n="footer.about">Acerca de</a></li>
-                    <li><a href="#" data-i18n="footer.blog">Blog</a></li>
-                    <li><a href="#" data-i18n="footer.contact">Contacto</a></li>
+                    <li><a href="#company" data-i18n="footer.about">About</a></li>
+                    <li><a href="#team" data-i18n="nav.team">Team</a></li>
+                    <li><a href="https://github.com/1ASI0730-2610-10215/Landing-Page" data-i18n="footer.repository">Repository</a></li>
                 </ul>
             </div>
             <div class="footer-column">
-                <h4 data-i18n="footer.support">Soporte</h4>
+                <h4 data-i18n="footer.support">Support</h4>
                 <ul>
-                    <li><a href="#" data-i18n="footer.help">Ayuda</a></li>
-                    <li><a href="#" data-i18n="footer.documentation">Documentación</a></li>
-                    <li><a href="#" data-i18n="footer.status">Estado del Sistema</a></li>
+                    <li><a href="https://coldtrack-front-web.web.app/" data-i18n="actions.openApp">Open App</a></li>
+                    <li><a href="https://github.com/1ASI0730-2610-10215/Landing-Page" data-i18n="footer.documentation">Documentation</a></li>
+                    <li><a href="https://coldtrack-front-web.firebaseapp.com/" data-i18n="footer.alternateApp">Alternate App URL</a></li>
                 </ul>
             </div>
         </div>
         <div class="footer-bottom">
-            <p data-i18n="footer.copyright">&copy; 2026 ColdTrack. Todos los derechos reservados.</p>
+            <p data-i18n="footer.copyright">&copy; 2026 ColdTrack. All rights reserved.</p>
         </div>
     </footer>
 </body>

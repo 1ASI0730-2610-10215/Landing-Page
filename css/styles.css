@@ -142,6 +142,10 @@ body {
     font-weight: 500;
     cursor: pointer;
     transition: var(--transition);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .btn-login:hover {
@@ -161,6 +165,10 @@ body {
     cursor: pointer;
     transition: var(--transition);
     font-size: 1rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
 }
 
 .btn-primary {
@@ -474,6 +482,91 @@ body {
     color: white;
 }
 
+/* ===========================
+   COMPANY AND TEAM SECTIONS
+   =========================== */
+
+.company {
+    padding: var(--padding-lg) var(--padding-sm);
+    background: #F9FAFB;
+}
+
+.company-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1.6fr) minmax(280px, 0.8fr);
+    gap: 2rem;
+    align-items: start;
+}
+
+.company h2,
+.team h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+}
+
+.company p {
+    color: var(--text-light);
+    line-height: 1.8;
+}
+
+.company-values {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.company-values article,
+.company-card,
+.team-card {
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    background: white;
+    padding: 1.5rem;
+}
+
+.company-values h3,
+.company-card h3,
+.team-card h3 {
+    margin-bottom: 0.75rem;
+    color: var(--text-dark);
+}
+
+.company-card {
+    box-shadow: 0 12px 28px rgba(0, 82, 204, 0.1);
+}
+
+.company-card .btn {
+    margin-top: 1.25rem;
+}
+
+.team {
+    padding: var(--padding-lg) var(--padding-sm);
+    background: white;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+}
+
+.team-card {
+    transition: var(--transition);
+}
+
+.team-card:hover {
+    border-color: var(--primary-color);
+    transform: translateY(-4px);
+    box-shadow: 0 10px 22px rgba(0, 82, 204, 0.12);
+}
+
+.team-card p {
+    color: var(--text-light);
+    font-weight: 600;
+}
+
 .benefits h2 {
     color: white;
 }
@@ -662,6 +755,8 @@ body {
     .features,
     .how-it-works,
     .benefits,
+    .company,
+    .team,
     .cta {
         padding: var(--padding-md) var(--padding-sm);
     }
@@ -669,13 +764,18 @@ body {
     .features h2,
     .how-it-works h2,
     .benefits h2,
+    .company h2,
+    .team h2,
     .cta h2 {
         font-size: 1.75rem;
     }
 
     .features-grid,
     .steps-grid,
-    .benefits-grid {
+    .benefits-grid,
+    .company-layout,
+    .company-values,
+    .team-grid {
         grid-template-columns: 1fr;
     }
 
