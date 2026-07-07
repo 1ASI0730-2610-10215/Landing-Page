@@ -537,17 +537,6 @@ textarea {
   gap: 1.7rem;
 }
 
-.section-eyebrow {
-  display: inline-flex;
-  margin-bottom: 0.75rem;
-  border-radius: 999px;
-  padding: 0.35rem 0.8rem;
-  color: #0052cc;
-  background: #dbeafe;
-  font-size: 0.82rem;
-  font-weight: 800;
-}
-
 .company-proof-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -600,18 +589,6 @@ textarea {
   inset: 0 0 auto;
   height: 5px;
   background: linear-gradient(90deg, var(--primary-color), var(--success-color));
-}
-
-.app-card-badge {
-  display: inline-flex;
-  margin-bottom: 0.85rem;
-  border-radius: 999px;
-  padding: 0.3rem 0.7rem;
-  color: #047857;
-  background: #d1fae5;
-  font-size: 0.76rem;
-  font-weight: 800;
-  letter-spacing: 0;
 }
 
 .app-feature-list {
