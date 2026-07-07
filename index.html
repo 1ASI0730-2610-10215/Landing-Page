@@ -7,10 +7,11 @@
     <meta name="keywords" content="monitoring, food transport, temperature, humidity, IoT, logistics">
     <meta name="author" content="ColdTrack">
     <title>ColdTrack - Real-Time Monitoring for Food Transport</title>
-    <link rel="canonical" href="https://coldtrack.com/">
+    <link rel="canonical" href="https://1asi0730-2610-10215.github.io/Landing-Page/">
     <meta property="og:title" content="ColdTrack - Real-Time Monitoring">
     <meta property="og:description" content="Guarantee product quality with temperature and humidity control.">
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://1asi0730-2610-10215.github.io/Landing-Page/">
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/script.js" defer></script>
 </head>
@@ -24,11 +25,17 @@
                 </svg>
                 <span>ColdTrack</span>
             </a>
-            <nav class="nav-menu" aria-label="Primary navigation">
+            <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav id="primary-navigation" class="nav-menu" aria-label="Primary navigation">
                 <a href="#features" data-i18n="nav.features">Features</a>
                 <a href="#how-it-works" data-i18n="nav.howItWorks">How It Works</a>
                 <a href="#benefits" data-i18n="nav.benefits">Benefits</a>
                 <a href="#company" data-i18n="nav.company">Company</a>
+                <a href="#product-demo" data-i18n="nav.demo">Product Demo</a>
                 <a href="#team" data-i18n="nav.team">Team</a>
             </nav>
             <div class="header-actions">
@@ -53,40 +60,40 @@
                 </div>
 
                 <div class="dashboard-preview" aria-label="Live monitoring dashboard preview">
-                    <h3 data-i18n="dashboard.title">Dashboard - Monitoreo en Vivo</h3>
+                    <h3 data-i18n="dashboard.title">Dashboard - Live Monitoring</h3>
                     <p class="active-shipments">
                         <span class="status-dot" aria-hidden="true">●</span>
-                        <span data-i18n="dashboard.activeShipments">5 envíos activos</span>
+                        <span data-i18n="dashboard.activeShipments">5 active shipments</span>
                     </p>
                     <div class="shipments-grid">
                         <article class="shipment-card">
                             <div class="shipment-header">
-                                <p class="shipment-id" data-i18n="dashboard.shipmentOne">Envío #1247</p>
+                                <p class="shipment-id" data-i18n="dashboard.shipmentOne">Shipment #1247</p>
                                 <span class="badge badge-normal" data-i18n="dashboard.statusNormal">Normal</span>
                             </div>
                             <div class="shipment-data">
                                 <h4>4°C</h4>
-                                <p data-i18n="dashboard.humidityLow">Humedad: 65%</p>
+                                <p data-i18n="dashboard.humidityLow">Humidity: 65%</p>
                             </div>
                         </article>
                         <article class="shipment-card shipment-warning">
                             <div class="shipment-header">
-                                <p class="shipment-id" data-i18n="dashboard.shipmentTwo">Envío #1248</p>
-                                <span class="badge badge-warning" data-i18n="dashboard.statusWarning">Advertencia</span>
+                                <p class="shipment-id" data-i18n="dashboard.shipmentTwo">Shipment #1248</p>
+                                <span class="badge badge-warning" data-i18n="dashboard.statusWarning">Warning</span>
                             </div>
                             <div class="shipment-data">
                                 <h4>7°C</h4>
-                                <p data-i18n="dashboard.humidityHigh">Humedad: 72%</p>
+                                <p data-i18n="dashboard.humidityHigh">Humidity: 72%</p>
                             </div>
                         </article>
                         <article class="shipment-card">
                             <div class="shipment-header">
-                                <p class="shipment-id" data-i18n="dashboard.shipmentThree">Envío #1249</p>
+                                <p class="shipment-id" data-i18n="dashboard.shipmentThree">Shipment #1249</p>
                                 <span class="badge badge-normal" data-i18n="dashboard.statusNormal">Normal</span>
                             </div>
                             <div class="shipment-data">
                                 <h4>3°C</h4>
-                                <p data-i18n="dashboard.humidityMedium">Humedad: 60%</p>
+                                <p data-i18n="dashboard.humidityMedium">Humidity: 60%</p>
                             </div>
                         </article>
                     </div>
@@ -105,8 +112,8 @@
                                 <path d="M20 4V36M20 4C24.4 4 28 8 28 12C28 16 24.4 20 20 20C15.6 20 12 16 12 12C12 8 15.6 4 20 4Z" />
                             </svg>
                         </div>
-                        <h3 data-i18n="features.realtimeTitle">Monitoreo en Tiempo Real</h3>
-                        <p data-i18n="features.realtimeDescription">Visualiza temperatura y humedad de cada envío en tiempo real. Datos actualizados constantemente desde sensores IoT.</p>
+                        <h3 data-i18n="features.realtimeTitle">Real-Time Monitoring</h3>
+                        <p data-i18n="features.realtimeDescription">View each shipment's temperature and humidity in real time with constantly updated IoT sensor data.</p>
                     </article>
                     <article class="feature-card">
                         <div class="feature-icon icon-alert">
@@ -115,8 +122,8 @@
                                 <circle cx="20" cy="28" r="2" />
                             </svg>
                         </div>
-                        <h3 data-i18n="features.alertsTitle">Alertas Automáticas</h3>
-                        <p data-i18n="features.alertsDescription">Recibe notificaciones inmediatas cuando las condiciones se salen de rango. Actúa antes de que haya pérdidas.</p>
+                        <h3 data-i18n="features.alertsTitle">Automatic Alerts</h3>
+                        <p data-i18n="features.alertsDescription">Receive immediate notifications when conditions move out of range. Act before losses happen.</p>
                     </article>
                     <article class="feature-card">
                         <div class="feature-icon icon-history">
@@ -125,8 +132,8 @@
                                 <path d="M20 12V20L26 26" />
                             </svg>
                         </div>
-                        <h3 data-i18n="features.historyTitle">Historial Detallado</h3>
-                        <p data-i18n="features.historyDescription">Accede al registro completo de cada transporte. Analiza tendencias y mejora tu logística con datos concretos.</p>
+                        <h3 data-i18n="features.historyTitle">Detailed History</h3>
+                        <p data-i18n="features.historyDescription">Access the complete record for every transport. Analyze trends and improve logistics with concrete data.</p>
                     </article>
                 </div>
             </div>
@@ -139,23 +146,23 @@
                 <div class="steps-grid">
                     <article class="step-card">
                         <div class="step-number">1</div>
-                        <h3 data-i18n="workflow.stepOneTitle">Instalación de Sensores</h3>
-                        <p data-i18n="workflow.stepOneDescription">Colocamos sensores IoT en tus unidades de transporte</p>
+                        <h3 data-i18n="workflow.stepOneTitle">Sensor Installation</h3>
+                        <p data-i18n="workflow.stepOneDescription">We place IoT sensors in your transport units</p>
                     </article>
                     <article class="step-card">
                         <div class="step-number">2</div>
-                        <h3 data-i18n="workflow.stepTwoTitle">Transmisión de Datos</h3>
-                        <p data-i18n="workflow.stepTwoDescription">Los sensores envían datos en tiempo real a la plataforma</p>
+                        <h3 data-i18n="workflow.stepTwoTitle">Data Transmission</h3>
+                        <p data-i18n="workflow.stepTwoDescription">Sensors send real-time data to the platform</p>
                     </article>
                     <article class="step-card">
                         <div class="step-number">3</div>
-                        <h3 data-i18n="workflow.stepThreeTitle">Monitoreo Continuo</h3>
-                        <p data-i18n="workflow.stepThreeDescription">Visualiza todas tus rutas desde un dashboard centralizado</p>
+                        <h3 data-i18n="workflow.stepThreeTitle">Continuous Monitoring</h3>
+                        <p data-i18n="workflow.stepThreeDescription">View all routes from a centralized dashboard</p>
                     </article>
                     <article class="step-card">
                         <div class="step-number">4</div>
-                        <h3 data-i18n="workflow.stepFourTitle">Alertas y Reportes</h3>
-                        <p data-i18n="workflow.stepFourDescription">Recibe alertas y genera reportes detallados automáticamente</p>
+                        <h3 data-i18n="workflow.stepFourTitle">Alerts and Reports</h3>
+                        <p data-i18n="workflow.stepFourDescription">Receive alerts and generate detailed reports automatically</p>
                     </article>
                 </div>
             </div>
@@ -172,8 +179,8 @@
                                 <path d="M6 30L12 12L18 20L30 6L36 30" />
                             </svg>
                         </div>
-                        <h3 data-i18n="benefits.efficiencyTitle">Mayor Eficiencia</h3>
-                        <p data-i18n="benefits.efficiencyDescription">Optimiza rutas y reduce tiempos de respuesta ante incidencias</p>
+                        <h3 data-i18n="benefits.efficiencyTitle">Greater Efficiency</h3>
+                        <p data-i18n="benefits.efficiencyDescription">Optimize routes and reduce response times for incidents</p>
                     </article>
                     <article class="benefit-card">
                         <div class="benefit-icon">
@@ -182,7 +189,7 @@
                                 <path d="M24 30V38M20 38H28" />
                             </svg>
                         </div>
-                        <h3 data-i18n="benefits.riskTitle">Menos Riesgos</h3>
+                        <h3 data-i18n="benefits.riskTitle">Lower Risk</h3>
                         <p data-i18n="benefits.riskDescription">Prevent losses caused by product deterioration</p>
                     </article>
                     <article class="benefit-card">
@@ -192,9 +199,48 @@
                                 <circle cx="24" cy="24" r="18" />
                             </svg>
                         </div>
-                        <h3 data-i18n="benefits.decisionsTitle">Toma de Decisiones Rápida</h3>
-                        <p data-i18n="benefits.decisionsDescription">Accede a información en tiempo real para actuar de inmediato</p>
+                        <h3 data-i18n="benefits.decisionsTitle">Faster Decisions</h3>
+                        <p data-i18n="benefits.decisionsDescription">Access real-time information and act immediately</p>
                     </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="product-demo" class="product-demo">
+            <div class="container">
+                <h2 data-i18n="demo.title">Product Demo and Documentation</h2>
+                <p class="section-subtitle" data-i18n="demo.subtitle">Explore the deployed ColdTrack ecosystem and its project repositories.</p>
+                <div class="demo-grid">
+                    <a class="demo-card" href="https://coldtrack-front-web.web.app/" target="_blank" rel="noopener">
+                        <span class="demo-icon" aria-hidden="true">OPEN</span>
+                        <h3 data-i18n="demo.webAppTitle">Web Application</h3>
+                        <p data-i18n="demo.webAppDescription">Open the deployed Vue application for shipments, sensors, alerts and reports.</p>
+                    </a>
+                    <a class="demo-card" href="https://freshguard-coldtrack-platform.onrender.com/swagger/index.html" target="_blank" rel="noopener">
+                        <span class="demo-icon" aria-hidden="true">API</span>
+                        <h3 data-i18n="demo.apiTitle">API Swagger</h3>
+                        <p data-i18n="demo.apiDescription">Review the ASP.NET Core web services exposed through Swagger/OpenAPI.</p>
+                    </a>
+                    <a class="demo-card" href="https://github.com/1ASI0730-2610-10215/ColdTrack-Front" target="_blank" rel="noopener">
+                        <span class="demo-icon" aria-hidden="true">UI</span>
+                        <h3 data-i18n="demo.frontRepoTitle">Frontend Repository</h3>
+                        <p data-i18n="demo.frontRepoDescription">Inspect the Vue 3 web application source code and release history.</p>
+                    </a>
+                    <a class="demo-card" href="https://github.com/1ASI0730-2610-10215/FreshGuard.ColdTrack.Platform" target="_blank" rel="noopener">
+                        <span class="demo-icon" aria-hidden="true">DB</span>
+                        <h3 data-i18n="demo.backRepoTitle">Backend Repository</h3>
+                        <p data-i18n="demo.backRepoDescription">Inspect the backend platform, bounded contexts and MySQL integration.</p>
+                    </a>
+                    <a class="demo-card" href="https://github.com/1ASI0730-2610-10215/final-report" target="_blank" rel="noopener">
+                        <span class="demo-icon" aria-hidden="true">DOC</span>
+                        <h3 data-i18n="demo.reportRepoTitle">Final Report</h3>
+                        <p data-i18n="demo.reportRepoDescription">Access the project report with UX, architecture, sprint and deployment evidence.</p>
+                    </a>
+                    <a class="demo-card" href="https://github.com/1ASI0730-2610-10215/Landing-Page" target="_blank" rel="noopener">
+                        <span class="demo-icon" aria-hidden="true">LP</span>
+                        <h3 data-i18n="demo.landingRepoTitle">Landing Repository</h3>
+                        <p data-i18n="demo.landingRepoDescription">View this static landing page repository and GitHub Pages deployment.</p>
+                    </a>
                 </div>
             </div>
         </section>
@@ -231,22 +277,27 @@
                     <article class="team-card">
                         <h3>Eslander Celis Berrospi</h3>
                         <p>U201911249</p>
+                        <span data-i18n="team.roleUx">UX research and report documentation</span>
                     </article>
                     <article class="team-card">
                         <h3>Gabriel Mendoza Palacios</h3>
                         <p>U202416908</p>
+                        <span data-i18n="team.roleLanding">Landing page and collaboration evidence</span>
                     </article>
                     <article class="team-card">
                         <h3>Rodrigo Oblitas Alcalde</h3>
                         <p>U20221G185</p>
+                        <span data-i18n="team.roleValidation">Validation and product review</span>
                     </article>
                     <article class="team-card">
                         <h3>Aarón Avila Palacios</h3>
                         <p>U201823654</p>
+                        <span data-i18n="team.roleFullstack">Frontend, backend and deployment integration</span>
                     </article>
                     <article class="team-card">
                         <h3>Mathias Arechaga Saavedra</h3>
                         <p>U202320699</p>
+                        <span data-i18n="team.roleServices">Services documentation and sprint evidence</span>
                     </article>
                 </div>
             </div>
@@ -254,7 +305,7 @@
 
         <section class="cta">
             <div class="container">
-                <h2 data-i18n="cta.title">Comienza a Proteger tus Envíos Hoy</h2>
+                <h2 data-i18n="cta.title">Start Protecting Your Shipments Today</h2>
                 <p data-i18n="cta.description">Join the companies that already trust ColdTrack</p>
                 <a class="btn btn-primary btn-large" href="https://coldtrack-front-web.web.app/sign-in" data-i18n="actions.start">Start Now</a>
             </div>
@@ -271,13 +322,14 @@
                     </svg>
                     <span>ColdTrack</span>
                 </div>
-                <p data-i18n="footer.description">Monitoreo inteligente para el transporte de alimentos</p>
+                <p data-i18n="footer.description">Smart monitoring for food transport</p>
             </div>
             <div class="footer-column">
                 <h4 data-i18n="footer.product">Product</h4>
                 <ul>
                     <li><a href="#features" data-i18n="nav.features">Features</a></li>
                     <li><a href="https://coldtrack-front-web.web.app/" data-i18n="actions.openApp">Open App</a></li>
+                    <li><a href="#product-demo" data-i18n="nav.demo">Product Demo</a></li>
                     <li><a href="#benefits" data-i18n="nav.benefits">Benefits</a></li>
                 </ul>
             </div>
@@ -293,13 +345,15 @@
                 <h4 data-i18n="footer.support">Support</h4>
                 <ul>
                     <li><a href="https://coldtrack-front-web.web.app/" data-i18n="actions.openApp">Open App</a></li>
-                    <li><a href="https://github.com/1ASI0730-2610-10215/Landing-Page" data-i18n="footer.documentation">Documentation</a></li>
+                    <li><a href="https://github.com/1ASI0730-2610-10215/final-report" data-i18n="footer.documentation">Documentation</a></li>
+                    <li><a href="https://freshguard-coldtrack-platform.onrender.com/swagger/index.html" data-i18n="footer.apiDocs">API Documentation</a></li>
                     <li><a href="https://coldtrack-front-web.firebaseapp.com/" data-i18n="footer.alternateApp">Alternate App URL</a></li>
                 </ul>
             </div>
         </div>
         <div class="footer-bottom">
             <p data-i18n="footer.copyright">&copy; 2026 ColdTrack. All rights reserved.</p>
+            <p data-i18n="footer.developedBy">Developed by the HackRats team.</p>
         </div>
     </footer>
 </body>
