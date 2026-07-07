@@ -423,26 +423,32 @@ textarea {
 .feature-icon,
 .benefit-icon,
 .demo-icon {
-  width: 3.5rem;
-  height: 3.5rem;
+  width: 3.65rem;
+  height: 3.65rem;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 1rem;
-  border-radius: 10px;
+  border-radius: 14px;
   color: var(--primary-color);
-  background: #eaf2ff;
+  background: linear-gradient(145deg, #eef5ff, #dbeafe);
   font-weight: 800;
+}
+
+.feature-icon svg,
+.benefit-icon svg {
+  width: 2.25rem;
+  height: 2.25rem;
 }
 
 .feature-icon.icon-alert {
   color: var(--danger-color);
-  background: #fee2e2;
+  background: linear-gradient(145deg, #fff1f2, #fee2e2);
 }
 
 .feature-icon.icon-history {
   color: var(--success-color);
-  background: #dcfce7;
+  background: linear-gradient(145deg, #ecfdf5, #dcfce7);
 }
 
 .feature-card h3,
@@ -519,14 +525,55 @@ textarea {
 }
 
 .company {
-  background: var(--secondary-color);
+  background:
+    linear-gradient(135deg, rgba(245, 247, 251, 0.96), rgba(238, 245, 255, 0.92)),
+    radial-gradient(circle at 85% 15%, rgba(16, 185, 129, 0.12), transparent 28%);
 }
 
 .company-layout {
   display: grid;
-  grid-template-columns: minmax(0, 1.45fr) minmax(280px, 0.75fr);
+  grid-template-columns: minmax(0, 1.35fr) minmax(320px, 0.8fr);
   align-items: start;
-  gap: 1.5rem;
+  gap: 1.7rem;
+}
+
+.section-eyebrow {
+  display: inline-flex;
+  margin-bottom: 0.75rem;
+  border-radius: 999px;
+  padding: 0.35rem 0.8rem;
+  color: #0052cc;
+  background: #dbeafe;
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
+.company-proof-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.8rem;
+  margin-top: 1.2rem;
+}
+
+.company-proof-grid article {
+  padding: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.company-proof-grid strong {
+  display: block;
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.company-proof-grid span {
+  display: block;
+  margin-top: 0.45rem;
+  color: var(--text-light);
+  font-size: 0.9rem;
 }
 
 .company-values {
@@ -542,7 +589,55 @@ textarea {
 }
 
 .company-card {
+  position: relative;
+  overflow: hidden;
   box-shadow: var(--shadow-card);
+}
+
+.company-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 5px;
+  background: linear-gradient(90deg, var(--primary-color), var(--success-color));
+}
+
+.app-card-badge {
+  display: inline-flex;
+  margin-bottom: 0.85rem;
+  border-radius: 999px;
+  padding: 0.3rem 0.7rem;
+  color: #047857;
+  background: #d1fae5;
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.app-feature-list {
+  display: grid;
+  gap: 0.5rem;
+  margin: 1rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.app-feature-list li {
+  position: relative;
+  padding-left: 1.3rem;
+  color: var(--text-light);
+  font-size: 0.93rem;
+}
+
+.app-feature-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.58rem;
+  width: 0.48rem;
+  height: 0.48rem;
+  border-radius: 999px;
+  background: var(--success-color);
 }
 
 .company-card .btn {
@@ -561,11 +656,33 @@ textarea {
 }
 
 .team-grid {
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(205px, 1fr));
+}
+
+.team-card {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+}
+
+.team-card img {
+  width: 6.8rem;
+  height: 6.8rem;
+  margin-bottom: 1rem;
+  border: 4px solid #eef5ff;
+  border-radius: 999px;
+  object-fit: cover;
+  object-position: center;
+  box-shadow: 0 12px 26px rgba(15, 23, 42, 0.14);
+}
+
+.team-card h3 {
+  min-height: 2.8rem;
 }
 
 .team-card p {
   margin-bottom: 0.5rem;
+  color: var(--primary-color);
   font-weight: 800;
 }
 
@@ -734,6 +851,7 @@ textarea {
   .benefits-grid,
   .demo-grid,
   .company-values,
+  .company-proof-grid,
   .team-grid,
   .footer-content {
     grid-template-columns: 1fr;

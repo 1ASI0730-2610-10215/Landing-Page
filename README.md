@@ -36,6 +36,8 @@ Landing-Page/
 - Responsive layout for desktop, tablet, and mobile devices.
 - SEO metadata updated according to the selected language.
 - Accessible mobile navigation with `aria-expanded` and translated language toggle states.
+- Improved company section with operational proof points and direct access to the deployed ColdTrack application.
+- Team section with member portraits sourced from the final project report assets.
 
 ## Internationalization
 
