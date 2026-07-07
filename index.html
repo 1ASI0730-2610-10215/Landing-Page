@@ -108,8 +108,11 @@
                 <div class="features-grid">
                     <article class="feature-card">
                         <div class="feature-icon">
-                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-                                <path d="M20 4V36M20 4C24.4 4 28 8 28 12C28 16 24.4 20 20 20C15.6 20 12 16 12 12C12 8 15.6 4 20 4Z" />
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <path d="M14 8a6 6 0 0 1 12 0v14a10 10 0 1 1-12 0V8Z" />
+                                <path d="M20 28V12" />
+                                <path d="M16 18h8" />
+                                <circle cx="20" cy="30" r="3" fill="currentColor" stroke="none" />
                             </svg>
                         </div>
                         <h3 data-i18n="features.realtimeTitle">Real-Time Monitoring</h3>
@@ -117,9 +120,10 @@
                     </article>
                     <article class="feature-card">
                         <div class="feature-icon icon-alert">
-                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-                                <path d="M20 4L28 20H12L20 4Z" />
-                                <circle cx="20" cy="28" r="2" />
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <path d="M20 6 34 30H6L20 6Z" />
+                                <path d="M20 15v8" />
+                                <circle cx="20" cy="27" r="1.6" fill="currentColor" stroke="none" />
                             </svg>
                         </div>
                         <h3 data-i18n="features.alertsTitle">Automatic Alerts</h3>
@@ -127,9 +131,10 @@
                     </article>
                     <article class="feature-card">
                         <div class="feature-icon icon-history">
-                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-                                <circle cx="20" cy="20" r="14" />
-                                <path d="M20 12V20L26 26" />
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <path d="M12 10h16a3 3 0 0 1 3 3v17H9V13a3 3 0 0 1 3-3Z" />
+                                <path d="M14 17h12M14 23h8" />
+                                <path d="M16 6v7M24 6v7" />
                             </svg>
                         </div>
                         <h3 data-i18n="features.historyTitle">Detailed History</h3>
@@ -175,8 +180,10 @@
                 <div class="benefits-grid">
                     <article class="benefit-card">
                         <div class="benefit-icon">
-                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="white" stroke-width="2" aria-hidden="true">
-                                <path d="M6 30L12 12L18 20L30 6L36 30" />
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="white" stroke-width="2.4" aria-hidden="true">
+                                <path d="M8 34h32" />
+                                <path d="M12 30 20 20l7 6 10-14" />
+                                <path d="M31 12h6v6" />
                             </svg>
                         </div>
                         <h3 data-i18n="benefits.efficiencyTitle">Greater Efficiency</h3>
@@ -184,9 +191,9 @@
                     </article>
                     <article class="benefit-card">
                         <div class="benefit-icon">
-                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="white" stroke-width="2" aria-hidden="true">
-                                <path d="M10 28C10 18 16 10 24 10C32 10 38 18 38 28" />
-                                <path d="M24 30V38M20 38H28" />
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="white" stroke-width="2.4" aria-hidden="true">
+                                <path d="M24 6 38 12v11c0 9-5.8 15.6-14 19-8.2-3.4-14-10-14-19V12l14-6Z" />
+                                <path d="M18 24l4 4 8-10" />
                             </svg>
                         </div>
                         <h3 data-i18n="benefits.riskTitle">Lower Risk</h3>
@@ -194,9 +201,10 @@
                     </article>
                     <article class="benefit-card">
                         <div class="benefit-icon">
-                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="white" stroke-width="2" aria-hidden="true">
-                                <path d="M6 24H42M24 6V42" />
-                                <circle cx="24" cy="24" r="18" />
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="white" stroke-width="2.4" aria-hidden="true">
+                                <circle cx="24" cy="24" r="16" />
+                                <path d="M24 12v12l8 6" />
+                                <path d="M12 37 8 41M36 37l4 4" />
                             </svg>
                         </div>
                         <h3 data-i18n="benefits.decisionsTitle">Faster Decisions</h3>
@@ -248,8 +256,23 @@
         <section id="company" class="company">
             <div class="container company-layout">
                 <div>
+                    <span class="section-eyebrow" data-i18n="company.eyebrow">Cold-chain intelligence for food logistics</span>
                     <h2 data-i18n="company.title">About FreshGuard Technologies</h2>
                     <p data-i18n="company.description">FreshGuard Technologies is a technology startup focused on optimizing food quality during transport through real-time monitoring. Its main product, ColdTrack, integrates with temperature and humidity sensors installed in transport units so companies can supervise product conditions from distribution centers to the final destination.</p>
+                    <div class="company-proof-grid" aria-label="ColdTrack operational focus">
+                        <article>
+                            <strong>24/7</strong>
+                            <span data-i18n="company.proofMonitoring">Route monitoring</span>
+                        </article>
+                        <article>
+                            <strong>IoT</strong>
+                            <span data-i18n="company.proofSensors">Sensor telemetry</span>
+                        </article>
+                        <article>
+                            <strong>PDF</strong>
+                            <span data-i18n="company.proofReports">Exportable reports</span>
+                        </article>
+                    </div>
                     <div class="company-values">
                         <article>
                             <h3 data-i18n="company.missionTitle">Mission</h3>
@@ -262,8 +285,14 @@
                     </div>
                 </div>
                 <aside class="company-card" aria-label="ColdTrack application access">
+                    <span class="app-card-badge">ColdTrack</span>
                     <h3 data-i18n="company.appTitle">ColdTrack Web App</h3>
                     <p data-i18n="company.appDescription">Access the deployed application to manage shipments, sensors, alerts, and historical reports.</p>
+                    <ul class="app-feature-list">
+                        <li data-i18n="company.appFeatureShipments">Shipment dashboard and status control</li>
+                        <li data-i18n="company.appFeatureSensors">Sensor assignment and telemetry readings</li>
+                        <li data-i18n="company.appFeatureReports">Alerts, history and PDF reports</li>
+                    </ul>
                     <a class="btn btn-primary" href="https://coldtrack-front-web.web.app/" data-i18n="actions.openApp">Open App</a>
                 </aside>
             </div>
@@ -275,29 +304,44 @@
                 <p class="section-subtitle" data-i18n="team.subtitle">HackRats team members behind ColdTrack</p>
                 <div class="team-grid">
                     <article class="team-card">
-                        <h3>Eslander Celis Berrospi</h3>
-                        <p>U201911249</p>
-                        <span data-i18n="team.roleUx">UX research and report documentation</span>
+                        <img src="images/team/eslander-celis.jpg" alt="Eslander Celis Berrospi" loading="lazy">
+                        <div>
+                            <h3>Eslander Celis Berrospi</h3>
+                            <p>U201911249</p>
+                            <span data-i18n="team.roleUx">UX research and report documentation</span>
+                        </div>
                     </article>
                     <article class="team-card">
-                        <h3>Gabriel Mendoza Palacios</h3>
-                        <p>U202416908</p>
-                        <span data-i18n="team.roleLanding">Landing page and collaboration evidence</span>
+                        <img src="images/team/gabriel-mendoza.png" alt="Gabriel Mendoza Palacios" loading="lazy">
+                        <div>
+                            <h3>Gabriel Mendoza Palacios</h3>
+                            <p>U202416908</p>
+                            <span data-i18n="team.roleLanding">Landing page and collaboration evidence</span>
+                        </div>
                     </article>
                     <article class="team-card">
-                        <h3>Rodrigo Oblitas Alcalde</h3>
-                        <p>U20221G185</p>
-                        <span data-i18n="team.roleValidation">Validation and product review</span>
+                        <img src="images/team/rodrigo-oblitas.png" alt="Rodrigo Oblitas Alcalde" loading="lazy">
+                        <div>
+                            <h3>Rodrigo Oblitas Alcalde</h3>
+                            <p>U20221G185</p>
+                            <span data-i18n="team.roleValidation">Validation and product review</span>
+                        </div>
                     </article>
                     <article class="team-card">
-                        <h3>Aarón Avila Palacios</h3>
-                        <p>U201823654</p>
-                        <span data-i18n="team.roleFullstack">Frontend, backend and deployment integration</span>
+                        <img src="images/team/aaron-avila.png" alt="Aarón Avila Palacios" loading="lazy">
+                        <div>
+                            <h3>Aarón Avila Palacios</h3>
+                            <p>U201823654</p>
+                            <span data-i18n="team.roleFullstack">Frontend, backend and deployment integration</span>
+                        </div>
                     </article>
                     <article class="team-card">
-                        <h3>Mathias Arechaga Saavedra</h3>
-                        <p>U202320699</p>
-                        <span data-i18n="team.roleServices">Services documentation and sprint evidence</span>
+                        <img src="images/team/mathias-arechaga.jpg" alt="Mathias Arechaga Saavedra" loading="lazy">
+                        <div>
+                            <h3>Mathias Arechaga Saavedra</h3>
+                            <p>U202320699</p>
+                            <span data-i18n="team.roleServices">Services documentation and sprint evidence</span>
+                        </div>
                     </article>
                 </div>
             </div>
